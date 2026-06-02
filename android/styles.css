@@ -171,3 +171,19 @@ main { padding: 10px 10px 40px; }
 .btn-ghost:active { background: rgba(255,255,255,0.08); }
 .btn-danger { background: var(--danger); color: #fff; }
 .btn-danger:active { filter: brightness(0.9); }
+
+/* info popup */
+.dialog.info { max-width: 340px; }
+.info-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.info-head img {
+  width: 56px; height: 56px; object-fit: contain;
+  image-rendering: pixelated;
+  background: #1c1c1c; border-radius: 10px; padding: 6px; flex: none;
+}
+.info-head h2 { margin: 0; font-size: 18px; line-height: 1.15; }
+.info-kind {
+  margin: 3px 0 0; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 1px; color: var(--accent);
+}
+.info-body { margin: 0 0 18px; color: var(--text); font-size: 15px; line-height: 1.45; }
+.info-body .info-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 2px; }

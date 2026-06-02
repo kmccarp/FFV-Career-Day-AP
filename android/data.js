@@ -6,31 +6,31 @@ window.TRACKER_DATA = {
         "code": "1st_Tablet",
         "name": "1st Tablet",
         "img": "images/items/tablet1_alt.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Pyramid_Page",
         "name": "Pyramid Page",
         "img": "images/items/pyramid_page2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Walse_Tower_Key",
         "name": "Walse Tower Key",
         "img": "images/items/walse_key2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Ifrit's_Fire",
         "name": "Ifrit's Fire",
         "img": "images/items/fire.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Moogle_Suit",
         "name": "Moogle Suit",
         "img": "images/items/moogle.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       }
     ],
     [
@@ -38,31 +38,31 @@ window.TRACKER_DATA = {
         "code": "2nd_Tablet",
         "name": "2nd Tablet",
         "img": "images/items/tablet2_alt.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Shrine_Page",
         "name": "Shrine Page",
         "img": "images/items/shrine_page2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Steamship_Key",
         "name": "Steamship Key",
         "img": "images/items/steamship_key2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "SandwormBait",
         "name": "Sandworm Bait",
         "img": "images/items/bait.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Mirage_Radar",
         "name": "Mirage Radar",
         "img": "images/items/mirage_radar.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       }
     ],
     [
@@ -70,31 +70,31 @@ window.TRACKER_DATA = {
         "code": "3rd_Tablet",
         "name": "3rd Tablet",
         "img": "images/items/tablet3_alt.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Trench_Page",
         "name": "Trench Page",
         "img": "images/items/trench_page2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Submarine_Key",
         "name": "Submarine Key",
         "img": "images/items/sub_key2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Hiryuu_Call",
         "name": "Hiryuu Call",
         "img": "images/items/hiryuu.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Adamantite",
         "name": "Adamantite",
         "img": "images/items/adamantite.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       }
     ],
     [
@@ -102,31 +102,31 @@ window.TRACKER_DATA = {
         "code": "4th_Tablet",
         "name": "4th Tablet",
         "img": "images/items/tablet4_alt.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Falls_Page",
         "name": "Falls Page",
         "img": "images/items/falls_page2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Big_Bridge_Key",
         "name": "Big Bridge Key",
         "img": "images/items/bridge_key2.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "Elder_Branch",
         "name": "Elder Branch",
         "img": "images/items/branch.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       },
       {
         "code": "W2_Keys",
         "name": "W2 Keys (Anti-Barrier + Bracelet)",
         "img": "images/items/w2_keys.png",
-        "off": "images/items/w2_keys_disabled.png"
+        "kind": "Key Item"
       }
     ]
   ],
@@ -134,260 +134,358 @@ window.TRACKER_DATA = {
     [
       {
         "code": "wingraptorx",
-        "name": "Wingraptor",
-        "img": "images/bosses/wingraptor.png"
+        "name": "WingRaptor",
+        "img": "images/bosses/wingraptor.png",
+        "kind": "Boss",
+        "location": "Wind Shrine"
       },
       {
         "code": "karlibosx",
-        "name": "Karlibos",
-        "img": "images/bosses/karlibos.png"
+        "name": "Karlabos",
+        "img": "images/bosses/karlibos.png",
+        "kind": "Boss",
+        "location": "Torna Canal"
       },
       {
         "code": "sirenx",
         "name": "Siren",
-        "img": "images/bosses/siren.png"
+        "img": "images/bosses/siren.png",
+        "kind": "Boss",
+        "location": "Ship Graveyard"
       },
       {
         "code": "magisax",
-        "name": "Magisa",
-        "img": "images/bosses/magisa.png"
+        "name": "Magisa & Forza",
+        "img": "images/bosses/magisa.png",
+        "kind": "Boss",
+        "location": "North Mountain"
       },
       {
         "code": "galurax",
         "name": "Galura",
-        "img": "images/bosses/galura.png"
+        "img": "images/bosses/galura.png",
+        "kind": "Boss",
+        "location": "Walse Tower"
       },
       {
         "code": "shivax",
         "name": "Shiva",
-        "img": "images/bosses/shiva.png"
+        "img": "images/bosses/shiva.png",
+        "kind": "Boss",
+        "location": "Walse Castle"
       },
       {
         "code": "liquidflamex",
-        "name": "Liquidflame",
-        "img": "images/bosses/liquidflame_alt.png"
+        "name": "LiquiFlame",
+        "img": "images/bosses/liquidflame_alt.png",
+        "kind": "Boss",
+        "location": "Steamship"
       }
     ],
     [
       {
         "code": "ironclawx",
-        "name": "Ironclaw",
-        "img": "images/bosses/ironclaw.png"
+        "name": "Sergeant & DeathClaw",
+        "img": "images/bosses/ironclaw.png",
+        "kind": "Boss",
+        "location": "Karnak"
       },
       {
         "code": "ifritx",
         "name": "Ifrit",
-        "img": "images/bosses/ifrit.png"
+        "img": "images/bosses/ifrit.png",
+        "kind": "Boss",
+        "location": "Ancient Library"
       },
       {
         "code": "byblosx",
         "name": "Byblos",
-        "img": "images/bosses/byblos.png"
+        "img": "images/bosses/byblos.png",
+        "kind": "Boss",
+        "location": "Ancient Library Lower"
       },
       {
         "code": "sandwormx",
         "name": "Sandworm",
-        "img": "images/bosses/sandworm.png"
+        "img": "images/bosses/sandworm.png",
+        "kind": "Boss",
+        "location": "Desert of Shifting Sands"
       },
       {
         "code": "adamantx",
-        "name": "Adamant",
-        "img": "images/bosses/adamant.png"
+        "name": "AdamanTiMi",
+        "img": "images/bosses/adamant.png",
+        "kind": "Boss",
+        "location": "Tycoon Meteor"
       },
       {
         "code": "solcannonx",
-        "name": "Solcannon",
-        "img": "images/bosses/solcannon.png"
+        "name": "Sol Cannon",
+        "img": "images/bosses/solcannon.png",
+        "kind": "Boss",
+        "location": "Flying Lonka Ruins"
       },
       {
         "code": "archaeavisx",
-        "name": "Archaeavis",
-        "img": "images/bosses/archaeavis.png"
+        "name": "ArchaeAvis",
+        "img": "images/bosses/archaeavis.png",
+        "kind": "Boss",
+        "location": "Flying Lonka Ruins"
       }
     ],
     [
       {
         "code": "crayclawx",
         "name": "Crayclaw",
-        "img": "images/bosses/crayclaw.png"
+        "img": "images/bosses/crayclaw.png",
+        "kind": "Boss",
+        "location": "Catapult"
       },
       {
         "code": "chimbrainx",
-        "name": "Chimbrain",
-        "img": "images/bosses/chimbrain.png"
+        "name": "Chim.Brain",
+        "img": "images/bosses/chimbrain.png",
+        "kind": "Boss",
+        "location": "Lonka Meteor"
       },
       {
         "code": "titanx",
         "name": "Titan",
-        "img": "images/bosses/titan.png"
+        "img": "images/bosses/titan.png",
+        "kind": "Boss",
+        "location": "Karnak Meteor"
       },
       {
         "code": "puroborosx",
         "name": "Puroboros",
-        "img": "images/bosses/puroboros.png"
+        "img": "images/bosses/puroboros.png",
+        "kind": "Boss",
+        "location": "Walse Meteor"
       },
       {
         "code": "tyrasaurusx",
         "name": "Tyrasaurus",
-        "img": "images/bosses/tyrasaurus_alt.png"
+        "img": "images/bosses/tyrasaurus_alt.png",
+        "kind": "Boss",
+        "location": "Moogle Waterway"
       },
       {
         "code": "abductorx",
         "name": "Abductor",
-        "img": "images/bosses/abductor.png"
+        "img": "images/bosses/abductor.png",
+        "kind": "Boss",
+        "location": "Bal Castle"
       },
       {
         "code": "hiryuuplantx",
-        "name": "Hiryuuplant",
-        "img": "images/bosses/hiryuuplant_alt.png"
+        "name": "HiryuuPlant",
+        "img": "images/bosses/hiryuuplant_alt.png",
+        "kind": "Boss",
+        "location": "Hiryuu Valley"
       }
     ],
     [
       {
         "code": "guardianx",
-        "name": "Guardian",
-        "img": "images/bosses/guardian_alt.png"
+        "name": "Guardians",
+        "img": "images/bosses/guardian_alt.png",
+        "kind": "Boss",
+        "location": "Mua Forest"
       },
       {
         "code": "atomosx",
-        "name": "Atomos",
-        "img": "images/bosses/atomos.png"
+        "name": "Atmos",
+        "img": "images/bosses/atomos.png",
+        "kind": "Boss",
+        "location": "Barrier Tower"
       },
       {
         "code": "carbunklex",
         "name": "Carbunkle",
-        "img": "images/bosses/carbunkle.png"
+        "img": "images/bosses/carbunkle.png",
+        "kind": "Boss",
+        "location": "Exdeath's Castle"
       },
       {
         "code": "gilga1x",
-        "name": "Gilga 1",
-        "img": "images/bosses/gilga1_alt.png"
+        "name": "Gilgamesh 1",
+        "img": "images/bosses/gilga1_alt.png",
+        "kind": "Boss",
+        "location": "Exdeath's Castle Lower"
       },
       {
         "code": "gilga2x",
-        "name": "Gilga 2",
-        "img": "images/bosses/gilga2_alt.png"
+        "name": "Gilgamesh 2",
+        "img": "images/bosses/gilga2_alt.png",
+        "kind": "Boss",
+        "location": "Big Bridge"
       },
       {
         "code": "gilgaenkix",
-        "name": "Gilgaenki",
-        "img": "images/bosses/gilgaenki_alt.png"
+        "name": "Gilgamesh 3 & Enkidou",
+        "img": "images/bosses/gilgaenki_alt.png",
+        "kind": "Boss",
+        "location": "Zeza Fleet"
       },
       {
         "code": "gilga4x",
-        "name": "Gilga 4",
-        "img": "images/bosses/gilga4_alt.png"
+        "name": "Gilgamesh 4",
+        "img": "images/bosses/gilga4_alt.png",
+        "kind": "Boss",
+        "location": "Exdeath's Castle"
       }
     ],
     [
       {
         "code": "antlionx",
         "name": "Antlion",
-        "img": "images/bosses/antlion.png"
+        "img": "images/bosses/antlion.png",
+        "kind": "Boss",
+        "location": "Tule Pass"
       },
       {
         "code": "gargoylex",
         "name": "Gargoyle",
-        "img": "images/bosses/gargoyle.png"
+        "img": "images/bosses/gargoyle.png",
+        "kind": "Boss",
+        "location": "Great Sea Trench"
       },
       {
         "code": "merugenex",
         "name": "Merugene",
-        "img": "images/bosses/merugene.png"
+        "img": "images/bosses/merugene.png",
+        "kind": "Boss",
+        "location": "Pyramid"
       },
       {
         "code": "stalkerx",
         "name": "Stalker",
-        "img": "images/bosses/stalker.png"
+        "img": "images/bosses/stalker.png",
+        "kind": "Boss",
+        "location": "Solitary Island"
       },
       {
         "code": "leviathanx",
         "name": "Leviathan",
-        "img": "images/bosses/leviathan.png"
+        "img": "images/bosses/leviathan.png",
+        "kind": "Boss",
+        "location": "Istory Falls"
       },
       {
         "code": "tritonx",
-        "name": "Triton",
-        "img": "images/bosses/triton.png"
+        "name": "Triton, Neregeid & Phobos",
+        "img": "images/bosses/triton.png",
+        "kind": "Boss",
+        "location": "Great Trench"
       },
       {
         "code": "omniscientx",
         "name": "Omniscient",
-        "img": "images/bosses/omniscient.png"
+        "img": "images/bosses/omniscient.png",
+        "kind": "Boss",
+        "location": "Fork Tower"
       }
     ],
     [
       {
         "code": "minotaurusx",
-        "name": "Minotaurus",
-        "img": "images/bosses/minotaurus.png"
+        "name": "Minotauros",
+        "img": "images/bosses/minotaurus.png",
+        "kind": "Boss",
+        "location": "Fork Tower"
       },
       {
         "code": "gogox",
-        "name": "Gogo",
-        "img": "images/bosses/gogo.png"
+        "name": "GoGo",
+        "img": "images/bosses/gogo.png",
+        "kind": "Boss",
+        "location": "Walse Tower"
       },
       {
         "code": "odinx",
         "name": "Odin",
-        "img": "images/bosses/odin.png"
+        "img": "images/bosses/odin.png",
+        "kind": "Boss",
+        "location": "Bal Castle Lower"
       },
       {
         "code": "bahamutx",
         "name": "Bahamut",
-        "img": "images/bosses/bahamut.png"
+        "img": "images/bosses/bahamut.png",
+        "kind": "Boss",
+        "location": "North Mountain Upper"
       },
       {
         "code": "ramuhx",
         "name": "Ramuh",
-        "img": "images/bosses/ramuh.png"
+        "img": "images/bosses/ramuh.png",
+        "kind": "Boss",
+        "location": "World 1 Forest (random encounter)"
       },
       {
         "code": "shoatx",
-        "name": "Shoat",
-        "img": "images/bosses/shoat.png"
+        "name": "Catoblepas (Shoat)",
+        "img": "images/bosses/shoat.png",
+        "kind": "Boss",
+        "location": "World 2 Forest Island, by submarine (random)"
       },
       {
         "code": "golemx",
         "name": "Golem",
-        "img": "images/bosses/golem.png"
+        "img": "images/bosses/golem.png",
+        "kind": "Boss",
+        "location": "Drakenvale (random encounter)"
       }
     ],
     [
       {
         "code": "calofisterix",
         "name": "Calofisteri",
-        "img": "images/bosses/calofisteri.png"
+        "img": "images/bosses/calofisteri.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Forest"
       },
       {
         "code": "apandax",
         "name": "Apanda",
-        "img": "images/bosses/apanda.png"
+        "img": "images/bosses/apanda.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Library"
       },
       {
         "code": "apocalypsex",
-        "name": "Apocalypse",
-        "img": "images/bosses/apocalypse.png"
+        "name": "Apocalypse (Azulmagia)",
+        "img": "images/bosses/apocalypse.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Castle Dungeon"
       },
       {
         "code": "catastrophx",
-        "name": "Catastroph",
-        "img": "images/bosses/catastroph.png"
+        "name": "Catastrophe",
+        "img": "images/bosses/catastroph.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Castle"
       },
       {
         "code": "halicarnasox",
-        "name": "Halicarnaso",
-        "img": "images/bosses/halicarnaso.png"
+        "name": "Halicarnassus",
+        "img": "images/bosses/halicarnaso.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Throne Room"
       },
       {
         "code": "twintaniax",
         "name": "Twintania",
-        "img": "images/bosses/twintania.png"
+        "img": "images/bosses/twintania.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Castle Roof"
       },
       {
         "code": "necrophobex",
         "name": "Necrophobe",
-        "img": "images/bosses/necrophobe.png"
+        "img": "images/bosses/necrophobe.png",
+        "kind": "Boss",
+        "location": "Interdimensional Rift — Final Area"
       }
     ]
   ],
@@ -396,120 +494,142 @@ window.TRACKER_DATA = {
       {
         "code": "Knight_Crystal",
         "name": "Knight Crystal",
-        "img": "images/jobs/knight_job.png"
+        "img": "images/jobs/knight_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Monk_Crystal",
         "name": "Monk Crystal",
-        "img": "images/jobs/monk_job.png"
+        "img": "images/jobs/monk_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Thief_Crystal",
         "name": "Thief Crystal",
-        "img": "images/jobs/thief_job.png"
+        "img": "images/jobs/thief_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Dragoon_Crystal",
         "name": "Dragoon Crystal",
-        "img": "images/jobs/dragoon_job.png"
+        "img": "images/jobs/dragoon_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Ninja_Crystal",
         "name": "Ninja Crystal",
-        "img": "images/jobs/ninja_job.png"
+        "img": "images/jobs/ninja_job.png",
+        "kind": "Job Crystal"
       }
     ],
     [
       {
         "code": "Samurai_Crystal",
         "name": "Samurai Crystal",
-        "img": "images/jobs/samurai_job.png"
+        "img": "images/jobs/samurai_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Berserker_Crystal",
         "name": "Berserker Crystal",
-        "img": "images/jobs/berserker_job.png"
+        "img": "images/jobs/berserker_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Hunter_Crystal",
         "name": "Hunter Crystal",
-        "img": "images/jobs/hunter_job.png"
+        "img": "images/jobs/hunter_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "MysticKnight_Crystal",
         "name": "Mystic Knight Crystal",
-        "img": "images/jobs/mystic_knight_job.png"
+        "img": "images/jobs/mystic_knight_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "WhiteMage_Crystal",
         "name": "White Mage Crystal",
-        "img": "images/jobs/white_mage_job.png"
+        "img": "images/jobs/white_mage_job.png",
+        "kind": "Job Crystal"
       }
     ],
     [
       {
         "code": "BlackMage_Crystal",
         "name": "Black Mage Crystal",
-        "img": "images/jobs/black_mage_job.png"
+        "img": "images/jobs/black_mage_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "TimeMage_Crystal",
         "name": "Time Mage Crystal",
-        "img": "images/jobs/time_mage_job.png"
+        "img": "images/jobs/time_mage_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Summoner_Crystal",
         "name": "Summoner Crystal",
-        "img": "images/jobs/summoner_job.png"
+        "img": "images/jobs/summoner_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "BlueMage_Crystal",
         "name": "Blue Mage Crystal",
-        "img": "images/jobs/blue_mage_job.png"
+        "img": "images/jobs/blue_mage_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "RedMage_Crystal",
         "name": "Red Mage Crystal",
-        "img": "images/jobs/red_mage_job.png"
+        "img": "images/jobs/red_mage_job.png",
+        "kind": "Job Crystal"
       }
     ],
     [
       {
         "code": "Trainer_Crystal",
         "name": "Trainer Crystal",
-        "img": "images/jobs/trainer_job.png"
+        "img": "images/jobs/trainer_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Chemist_Crystal",
         "name": "Chemist Crystal",
-        "img": "images/jobs/chemist_job.png"
+        "img": "images/jobs/chemist_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Geomancer_Crystal",
         "name": "Geomancer Crystal",
-        "img": "images/jobs/geomancer_job.png"
+        "img": "images/jobs/geomancer_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Bard_Crystal",
         "name": "Bard Crystal",
-        "img": "images/jobs/bard_job.png"
+        "img": "images/jobs/bard_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Dancer_Crystal",
         "name": "Dancer Crystal",
-        "img": "images/jobs/dancer_job.png"
+        "img": "images/jobs/dancer_job.png",
+        "kind": "Job Crystal"
       }
     ],
     [
       {
         "code": "Mimic_Crystal",
         "name": "Mimic Crystal",
-        "img": "images/jobs/mimic_job.png"
+        "img": "images/jobs/mimic_job.png",
+        "kind": "Job Crystal"
       },
       {
         "code": "Freelancer_Crystal",
         "name": "Freelancer Crystal",
-        "img": "images/jobs/freelancer_job.png"
+        "img": "images/jobs/freelancer_job.png",
+        "kind": "Job Crystal"
       }
     ]
   ],
@@ -519,19 +639,25 @@ window.TRACKER_DATA = {
       "name": "Pianos",
       "img": "images/icons/piano.png",
       "type": "counter",
-      "max": 8
+      "max": 8,
+      "kind": "Event",
+      "location": "Play all 8 pianos across the world"
     },
     {
       "code": "exdeathw2",
-      "name": "ExDeath (W2)",
+      "name": "ExDeath (World 2)",
       "img": "images/bosses/exdeath.png",
-      "type": "toggle"
+      "type": "toggle",
+      "kind": "Boss",
+      "location": "Castle of Bal / Exdeath's Castle (World 2)"
     },
     {
       "code": "exdeath",
       "name": "Neo ExDeath",
       "img": "images/bosses/neo_exdeath.png",
-      "type": "toggle"
+      "type": "toggle",
+      "kind": "Boss",
+      "location": "Interdimensional Rift — Final Floor"
     }
   ]
 };

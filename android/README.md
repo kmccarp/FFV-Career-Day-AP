@@ -10,7 +10,12 @@ PopTracker pack in this repo.
 - **Tap to track** Key Items, Jobs (career-day crystals), Bosses, and Events.
   - Items/jobs/events: tap to toggle on/off.
   - Bosses: tap to mark defeated (adds a ✓ badge).
-  - Pianos counter: tap to add one, long-press (or right-click) to subtract.
+  - Pianos counter: tap to add one; tapping past 8 wraps back to 0.
+    Long-press (or right-click) subtracts one.
+- **Long-press any item/boss** to pop up its name and, for bosses, the
+  **vanilla location** where it's found in FFV (e.g. "Gargoyle — Great Sea
+  Trench"). Boss names/locations are pulled straight from the pack's location
+  data, with the non-randomized bosses filled in from the FFV wiki.
 - **Saves after every change** to the browser's local storage.
 - **Auto-loads** your last saved state every time you open it.
 - **Clear** button in the top-right wipes everything, behind a confirmation dialog.

@@ -96,15 +96,53 @@ const assert = (cond, msg) => { if (!cond) { throw new Error('ASSERT FAILED: ' +
   assert(/\boff\b/.test(afterReload.fresh), 'after reload: untouched item still OFF');
   await shot(page, '03-after-reload');
 
-  console.log('4. Counter decrement (keyboard ArrowDown) + toggle off');
-  await page.focus('.grid.events .cell[data-code="piano_counter"]');
-  await page.keyboard.press('ArrowDown');
-  const pianoTxt2 = await page.textContent('.grid.events .cell[data-code="piano_counter"] .count');
-  assert(pianoTxt2 === '2/8', 'piano counter decremented to 2/8');
+  console.log('4. Long-press a boss shows name + vanilla location (and does NOT toggle)');
+  async function longPress(selector) {
+    const cell = page.locator(selector);
+    await cell.scrollIntoViewIfNeeded();
+    const box = await cell.boundingBox();
+    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+    await page.mouse.down();
+    await page.waitForTimeout(650);
+    await page.mouse.up();
+  }
+  // gargoylex starts OFF; long-press must reveal info without defeating it
+  await longPress('.grid.bosses .cell[data-code="gargoylex"]');
+  await page.waitForSelector('#infoOverlay:not([hidden])');
+  const infoTitle = await page.textContent('#infoTitle');
+  const infoBody = await page.textContent('#infoBody');
+  assert(infoTitle === 'Gargoyle', 'info title is the boss name ("' + infoTitle + '")');
+  assert(/Great Sea Trench/.test(infoBody), 'info body shows vanilla location ("' + infoBody + '")');
+  const gargoyleClass = await page.getAttribute('.grid.bosses .cell[data-code="gargoylex"]', 'class');
+  assert(/\boff\b/.test(gargoyleClass), 'long-press did NOT toggle the boss on');
+  await shot(page, '06-boss-info');
+  await page.click('#infoClose');
+  await page.waitForSelector('#infoOverlay[hidden]', { state: 'attached' });
+
+  // a Rift boss with an em-dash location
+  await longPress('.grid.bosses .cell[data-code="twintaniax"]');
+  await page.waitForSelector('#infoOverlay:not([hidden])');
+  assert((await page.textContent('#infoTitle')) === 'Twintania', 'second boss name correct');
+  assert(/Interdimensional Rift/.test(await page.textContent('#infoBody')), 'second boss location correct');
+  await page.click('#infoClose');
+  await page.waitForSelector('#infoOverlay[hidden]', { state: 'attached' });
+
+  console.log('5. Piano counter: tapping past 8 wraps back to 0');
+  // currently at 3 -> tap up to 8, then one more must reset to 0
+  const pianoSel = '.grid.events .cell[data-code="piano_counter"]';
+  for (let i = 0; i < 5; i++) await page.click(pianoSel); // 3 -> 8
+  assert((await page.textContent(pianoSel + ' .count')) === '8/8', 'piano reaches 8/8');
+  await page.click(pianoSel); // 9th press past max
+  assert((await page.textContent(pianoSel + ' .count')) === '0/8', 'tapping past 8 wraps to 0/8');
+  // bring it back up a little and verify long-press still decrements
+  await page.click(pianoSel); await page.click(pianoSel); // 0 -> 2
+  await longPress(pianoSel);
+  assert((await page.textContent(pianoSel + ' .count')) === '1/8', 'long-press decrements counter to 1/8');
+
+  console.log('6. Toggle an item off then on (data for clear test)');
   await page.click('.grid.items .cell[data-code="1st_Tablet"]'); // toggle back off
   const offAgain = await page.getAttribute('.grid.items .cell[data-code="1st_Tablet"]', 'class');
   assert(/\boff\b/.test(offAgain), '1st_Tablet toggled back OFF');
-  // toggle it on again so we have data for the clear test
   await page.click('.grid.items .cell[data-code="1st_Tablet"]');
 
   console.log('5. Clear flow: open dialog, Cancel keeps data');

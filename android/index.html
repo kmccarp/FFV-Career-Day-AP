@@ -27,6 +27,23 @@
 
   <main id="app"></main>
 
+  <!-- Long-press info popup -->
+  <div id="infoOverlay" class="overlay" hidden>
+    <div class="dialog info" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+      <div class="info-head">
+        <img id="infoImg" alt="" />
+        <div>
+          <h2 id="infoTitle"></h2>
+          <p id="infoKind" class="info-kind"></p>
+        </div>
+      </div>
+      <p id="infoBody" class="info-body"></p>
+      <div class="dialog-actions">
+        <button id="infoClose" class="btn btn-ghost" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Clear confirmation dialog -->
   <div id="confirmOverlay" class="overlay" hidden>
     <div class="dialog" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmBody">
