@@ -12,10 +12,13 @@ PopTracker pack in this repo.
   - Bosses: tap to mark defeated (adds a ✓ badge).
   - Pianos counter: tap to add one; tapping past 8 wraps back to 0.
     Long-press (or right-click) subtracts one.
-- **Long-press any item/boss** to pop up its name and, for bosses, the
-  **vanilla location** where it's found in FFV (e.g. "Gargoyle — Great Sea
-  Trench"). Boss names/locations are pulled straight from the pack's location
-  data, with the non-randomized bosses filled in from the FFV wiki.
+- **Long-press any item/boss** to pop up its name and details:
+  - **Key items** show **what they unlock** (e.g. "Adamantite — raises the
+    Flying Lonka Ruins, the path to World 2"). Sourced from bigbridge.studio's
+    Career Day wiki and confirmed against this pack's own access logic.
+  - **Bosses** show their **vanilla location** in FFV (e.g. "Gargoyle — Great
+    Sea Trench"), pulled from the pack's location data with the non-randomized
+    bosses filled in from the FFV wiki.
 - **Saves after every change** to the browser's local storage.
 - **Auto-loads** your last saved state every time you open it.
 - **Clear** button in the top-right wipes everything, behind a confirmation dialog.

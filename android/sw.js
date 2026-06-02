@@ -2,7 +2,7 @@
    App code (HTML/JS/CSS/manifest) is served network-first so a new deploy is
    picked up as soon as you're online; images are cached-first for speed/offline.
    Tracker state itself lives in localStorage, so it works with or without this. */
-var CACHE = 'ffv-career-day-v2';
+var CACHE = 'ffv-career-day-v3';
 var SHELL = [
   './',
   './index.html',

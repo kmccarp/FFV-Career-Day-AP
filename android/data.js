@@ -6,31 +6,36 @@ window.TRACKER_DATA = {
         "code": "1st_Tablet",
         "name": "1st Tablet",
         "img": "images/items/tablet1_alt.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "One of the 4 Tablets. Each Tablet you hold opens the next door of the Cleft of Dimensions (the Rift) in World 3 — collect all 4 for full Rift access."
       },
       {
         "code": "Pyramid_Page",
         "name": "Pyramid Page",
         "img": "images/items/pyramid_page2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Opens the Pyramid (World 3)."
       },
       {
         "code": "Walse_Tower_Key",
         "name": "Walse Tower Key",
         "img": "images/items/walse_key2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Unlocks Walse Tower (World 1)."
       },
       {
         "code": "Ifrit's_Fire",
         "name": "Ifrit's Fire",
         "img": "images/items/fire.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Burns open the lower Ancient Library (World 1) — the path to Byblos."
       },
       {
         "code": "Moogle_Suit",
         "name": "Moogle Suit",
         "img": "images/items/moogle.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Unlocks Moogle Village (World 2)."
       }
     ],
     [
@@ -38,31 +43,36 @@ window.TRACKER_DATA = {
         "code": "2nd_Tablet",
         "name": "2nd Tablet",
         "img": "images/items/tablet2_alt.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "One of the 4 Tablets. Each Tablet you hold opens the next door of the Cleft of Dimensions (the Rift) in World 3 — collect all 4 for full Rift access."
       },
       {
         "code": "Shrine_Page",
         "name": "Shrine Page",
         "img": "images/items/shrine_page2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Opens the Phoenix Tower on Solitary Island (World 3)."
       },
       {
         "code": "Steamship_Key",
         "name": "Steamship Key",
         "img": "images/items/steamship_key2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Unlocks the Steamship (World 1)."
       },
       {
         "code": "SandwormBait",
         "name": "Sandworm Bait",
         "img": "images/items/bait.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Lures the Sandworm — unlocks the Desert of Shifting Sands (World 1)."
       },
       {
         "code": "Mirage_Radar",
         "name": "Mirage Radar",
         "img": "images/items/mirage_radar.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Reveals and unlocks Mirage Village (World 2)."
       }
     ],
     [
@@ -70,31 +80,36 @@ window.TRACKER_DATA = {
         "code": "3rd_Tablet",
         "name": "3rd Tablet",
         "img": "images/items/tablet3_alt.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "One of the 4 Tablets. Each Tablet you hold opens the next door of the Cleft of Dimensions (the Rift) in World 3 — collect all 4 for full Rift access."
       },
       {
         "code": "Trench_Page",
         "name": "Trench Page",
         "img": "images/items/trench_page2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Opens the Great Sea Trench (World 3)."
       },
       {
         "code": "Submarine_Key",
         "name": "Submarine Key",
         "img": "images/items/sub_key2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Unlocks the submarine — reach Barrier Tower (World 2) and the Great Sea Trench & Istory Falls (World 3)."
       },
       {
         "code": "Hiryuu_Call",
         "name": "Hiryuu Call",
         "img": "images/items/hiryuu.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Calls the Hiryuu — unlocks Zeza's Fleet (World 2)."
       },
       {
         "code": "Adamantite",
         "name": "Adamantite",
         "img": "images/items/adamantite.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Raises the Flying Lonka Ruins — the path to World 2 (guaranteed to be found in World 1)."
       }
     ],
     [
@@ -102,31 +117,36 @@ window.TRACKER_DATA = {
         "code": "4th_Tablet",
         "name": "4th Tablet",
         "img": "images/items/tablet4_alt.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "One of the 4 Tablets. Each Tablet you hold opens the next door of the Cleft of Dimensions (the Rift) in World 3 — collect all 4 for full Rift access."
       },
       {
         "code": "Falls_Page",
         "name": "Falls Page",
         "img": "images/items/falls_page2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Opens Istory Falls (World 3)."
       },
       {
         "code": "Big_Bridge_Key",
         "name": "Big Bridge Key",
         "img": "images/items/bridge_key2.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Unlocks the Big Bridge (World 2)."
       },
       {
         "code": "Elder_Branch",
         "name": "Elder Branch",
         "img": "images/items/branch.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Unlocks the Great Forest of Moore (World 2)."
       },
       {
         "code": "W2_Keys",
         "name": "W2 Keys (Anti-Barrier + Bracelet)",
         "img": "images/items/w2_keys.png",
-        "kind": "Key Item"
+        "kind": "Key Item",
+        "unlocks": "Anti-Barrier + Bracelet: both are needed to reach and defeat Exdeath in his castle (World 2), which unlocks World 3."
       }
     ]
   ],

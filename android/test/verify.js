@@ -127,6 +127,18 @@ const assert = (cond, msg) => { if (!cond) { throw new Error('ASSERT FAILED: ' +
   await page.click('#infoClose');
   await page.waitForSelector('#infoOverlay[hidden]', { state: 'attached' });
 
+  // long-press a key item shows what it unlocks
+  await longPress('.grid.items .cell[data-code="Adamantite"]');
+  await page.waitForSelector('#infoOverlay:not([hidden])');
+  assert((await page.textContent('#infoTitle')) === 'Adamantite', 'key item info title correct');
+  assert((await page.textContent('#infoKind')) === 'Key Item', 'key item info kind correct');
+  assert(/World 2/.test(await page.textContent('#infoBody')), 'key item info shows what it unlocks');
+  await shot(page, '07-item-unlocks');
+  const adamantClass = await page.getAttribute('.grid.items .cell[data-code="Adamantite"]', 'class');
+  assert(/\boff\b/.test(adamantClass), 'long-press did NOT toggle the key item on');
+  await page.click('#infoClose');
+  await page.waitForSelector('#infoOverlay[hidden]', { state: 'attached' });
+
   console.log('5. Piano counter: tapping past 8 wraps back to 0');
   // currently at 3 -> tap up to 8, then one more must reset to 0
   const pianoSel = '.grid.events .cell[data-code="piano_counter"]';

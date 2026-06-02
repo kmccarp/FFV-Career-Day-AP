@@ -34,11 +34,36 @@ const itemNames = {
   'W2_Keys': 'W2 Keys (Anti-Barrier + Bracelet)',
 };
 
+// What each key item unlocks. Headline progression from bigbridge.studio's
+// Career Day wiki; the specific gated areas are confirmed against this pack's
+// own access_rules in locations.json.
+const TABLET = 'One of the 4 Tablets. Each Tablet you hold opens the next door of the Cleft of Dimensions (the Rift) in World 3 — collect all 4 for full Rift access.';
+const itemUnlocks = {
+  '1st_Tablet': TABLET, '2nd_Tablet': TABLET, '3rd_Tablet': TABLET, '4th_Tablet': TABLET,
+  'Pyramid_Page': 'Opens the Pyramid (World 3).',
+  'Shrine_Page': 'Opens the Phoenix Tower on Solitary Island (World 3).',
+  'Trench_Page': 'Opens the Great Sea Trench (World 3).',
+  'Falls_Page': 'Opens Istory Falls (World 3).',
+  'Walse_Tower_Key': 'Unlocks Walse Tower (World 1).',
+  'Steamship_Key': 'Unlocks the Steamship (World 1).',
+  'Submarine_Key': 'Unlocks the submarine — reach Barrier Tower (World 2) and the Great Sea Trench & Istory Falls (World 3).',
+  'Big_Bridge_Key': 'Unlocks the Big Bridge (World 2).',
+  "Ifrit's_Fire": 'Burns open the lower Ancient Library (World 1) — the path to Byblos.',
+  'SandwormBait': 'Lures the Sandworm — unlocks the Desert of Shifting Sands (World 1).',
+  'Hiryuu_Call': "Calls the Hiryuu — unlocks Zeza's Fleet (World 2).",
+  'Elder_Branch': 'Unlocks the Great Forest of Moore (World 2).',
+  'Moogle_Suit': 'Unlocks Moogle Village (World 2).',
+  'Mirage_Radar': 'Reveals and unlocks Mirage Village (World 2).',
+  'Adamantite': 'Raises the Flying Lonka Ruins — the path to World 2 (guaranteed to be found in World 1).',
+  'W2_Keys': 'Anti-Barrier + Bracelet: both are needed to reach and defeat Exdeath in his castle (World 2), which unlocks World 3.',
+};
+
 const keyItems = itemRows.map((row) =>
   row.map((code) => {
     const img = code === 'W2_Keys' ? 'images/items/w2_keys.png' : code2img[code];
     if (!img) throw new Error('Missing image for item ' + code);
-    return { code, name: itemNames[code] || code, img, kind: 'Key Item' };
+    if (!itemUnlocks[code]) throw new Error('Missing unlock text for item ' + code);
+    return { code, name: itemNames[code] || code, img, kind: 'Key Item', unlocks: itemUnlocks[code] };
   })
 );
 

@@ -91,12 +91,17 @@
     document.getElementById('infoTitle').textContent = item.name;
     document.getElementById('infoKind').textContent = item.kind || '';
     var body = document.getElementById('infoBody');
+    body.innerHTML = '';
     if (item.location) {
-      body.innerHTML = '';
       var label = el('span', 'info-label');
       label.textContent = item.kind === 'Boss' ? 'Vanilla location' : 'Where';
       body.appendChild(label);
       body.appendChild(document.createTextNode(item.location));
+    } else if (item.unlocks) {
+      var ul = el('span', 'info-label');
+      ul.textContent = 'Unlocks';
+      body.appendChild(ul);
+      body.appendChild(document.createTextNode(item.unlocks));
     } else {
       body.textContent = item.name;
     }
@@ -113,7 +118,7 @@
       'role': 'button',
       'tabindex': '0',
       'aria-pressed': on ? 'true' : 'false',
-      'title': item.name + (item.location ? ' — ' + item.location : ''),
+      'title': item.name + (item.location ? ' — ' + item.location : (item.unlocks ? ' — ' + item.unlocks : '')),
       'aria-label': item.name
     });
     cell.appendChild(makeImg(item.img));
