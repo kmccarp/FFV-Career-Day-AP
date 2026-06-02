@@ -234,7 +234,17 @@
     });
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').catch(function () { /* offline cache optional */ });
+      // when a new service worker takes over (new deploy), reload once to show it
+      var hadController = !!navigator.serviceWorker.controller;
+      var refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing || !hadController) return;
+        refreshing = true;
+        window.location.reload();
+      });
+      navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+        .then(function (reg) { reg.update(); })
+        .catch(function () { /* offline cache optional */ });
     }
   }
 
