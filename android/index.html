@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#212121" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>FFV Career Day — Tracker</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">
+      <span class="title-main">FFV Career Day</span>
+      <span class="title-sub">Manual Tracker</span>
+    </div>
+    <div class="actions">
+      <span id="saveState" class="save-state" aria-live="polite">Saved</span>
+      <button id="clearBtn" class="clear-btn" type="button">Clear</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <!-- Clear confirmation dialog -->
+  <div id="confirmOverlay" class="overlay" hidden>
+    <div class="dialog" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmBody">
+      <h2 id="confirmTitle">Clear everything?</h2>
+      <p id="confirmBody">This resets all items, bosses, jobs and events to empty. This can't be undone.</p>
+      <div class="dialog-actions">
+        <button id="confirmCancel" class="btn btn-ghost" type="button">Cancel</button>
+        <button id="confirmClear" class="btn btn-danger" type="button">Clear all</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
